@@ -1,0 +1,205 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B60E480144075CF00C3FF86 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 0B60E47F144075CF00C3FF86 /* main.c */; };
+		0B60E482144075CF00C3FF86 /* OpenATParser.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0B60E481144075CF00C3FF86 /* OpenATParser.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0B60E479144075CF00C3FF86 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				0B60E482144075CF00C3FF86 /* OpenATParser.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B60E47B144075CF00C3FF86 /* OpenATParser */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenATParser; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B60E47F144075CF00C3FF86 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		0B60E481144075CF00C3FF86 /* OpenATParser.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = OpenATParser.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B60E478144075CF00C3FF86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B60E470144075CF00C3FF86 = {
+			isa = PBXGroup;
+			children = (
+				0B60E47E144075CF00C3FF86 /* OpenATParser */,
+				0B60E47C144075CF00C3FF86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0B60E47C144075CF00C3FF86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B60E47B144075CF00C3FF86 /* OpenATParser */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B60E47E144075CF00C3FF86 /* OpenATParser */ = {
+			isa = PBXGroup;
+			children = (
+				0B60E47F144075CF00C3FF86 /* main.c */,
+				0B60E481144075CF00C3FF86 /* OpenATParser.1 */,
+			);
+			path = OpenATParser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B60E47A144075CF00C3FF86 /* OpenATParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B60E485144075CF00C3FF86 /* Build configuration list for PBXNativeTarget "OpenATParser" */;
+			buildPhases = (
+				0B60E477144075CF00C3FF86 /* Sources */,
+				0B60E478144075CF00C3FF86 /* Frameworks */,
+				0B60E479144075CF00C3FF86 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenATParser;
+			productName = OpenATParser;
+			productReference = 0B60E47B144075CF00C3FF86 /* OpenATParser */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B60E472144075CF00C3FF86 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 0B60E475144075CF00C3FF86 /* Build configuration list for PBXProject "OpenATParser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0B60E470144075CF00C3FF86;
+			productRefGroup = 0B60E47C144075CF00C3FF86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B60E47A144075CF00C3FF86 /* OpenATParser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B60E477144075CF00C3FF86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B60E480144075CF00C3FF86 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0B60E483144075CF00C3FF86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0B60E484144075CF00C3FF86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0B60E486144075CF00C3FF86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0B60E487144075CF00C3FF86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B60E475144075CF00C3FF86 /* Build configuration list for PBXProject "OpenATParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B60E483144075CF00C3FF86 /* Debug */,
+				0B60E484144075CF00C3FF86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B60E485144075CF00C3FF86 /* Build configuration list for PBXNativeTarget "OpenATParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B60E486144075CF00C3FF86 /* Debug */,
+				0B60E487144075CF00C3FF86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0B60E472144075CF00C3FF86 /* Project object */;
+}
