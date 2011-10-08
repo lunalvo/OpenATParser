@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0B60E480144075CF00C3FF86 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 0B60E47F144075CF00C3FF86 /* main.c */; };
 		0B60E482144075CF00C3FF86 /* OpenATParser.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0B60E481144075CF00C3FF86 /* OpenATParser.1 */; };
+		0B60E49014407DD100C3FF86 /* scheduler.c in Sources */ = {isa = PBXBuildFile; fileRef = 0B60E48F14407DD100C3FF86 /* scheduler.c */; };
+		0B60E4951440820900C3FF86 /* io_task.c in Sources */ = {isa = PBXBuildFile; fileRef = 0B60E4941440820900C3FF86 /* io_task.c */; };
+		0B60E4981440822A00C3FF86 /* atc_task.c in Sources */ = {isa = PBXBuildFile; fileRef = 0B60E4971440822A00C3FF86 /* atc_task.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +31,14 @@
 		0B60E47B144075CF00C3FF86 /* OpenATParser */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenATParser; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B60E47F144075CF00C3FF86 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		0B60E481144075CF00C3FF86 /* OpenATParser.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = OpenATParser.1; sourceTree = "<group>"; };
+		0B60E488144076CB00C3FF86 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		0B60E48D14407D0200C3FF86 /* scheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scheduler.h; sourceTree = "<group>"; };
+		0B60E48E14407D4F00C3FF86 /* conf_scheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf_scheduler.h; sourceTree = "<group>"; };
+		0B60E48F14407DD100C3FF86 /* scheduler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scheduler.c; sourceTree = "<group>"; };
+		0B60E4941440820900C3FF86 /* io_task.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = io_task.c; sourceTree = "<group>"; };
+		0B60E4961440821800C3FF86 /* io_task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = io_task.h; sourceTree = "<group>"; };
+		0B60E4971440822A00C3FF86 /* atc_task.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = atc_task.c; sourceTree = "<group>"; };
+		0B60E4991440823200C3FF86 /* atc_task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atc_task.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +71,50 @@
 		0B60E47E144075CF00C3FF86 /* OpenATParser */ = {
 			isa = PBXGroup;
 			children = (
+				0B60E491144081D900C3FF86 /* Modules */,
+				0B60E48C14407D0200C3FF86 /* Scheduler */,
 				0B60E47F144075CF00C3FF86 /* main.c */,
 				0B60E481144075CF00C3FF86 /* OpenATParser.1 */,
+				0B60E488144076CB00C3FF86 /* config.h */,
 			);
 			path = OpenATParser;
+			sourceTree = "<group>";
+		};
+		0B60E48C14407D0200C3FF86 /* Scheduler */ = {
+			isa = PBXGroup;
+			children = (
+				0B60E48F14407DD100C3FF86 /* scheduler.c */,
+				0B60E48D14407D0200C3FF86 /* scheduler.h */,
+				0B60E48E14407D4F00C3FF86 /* conf_scheduler.h */,
+			);
+			path = Scheduler;
+			sourceTree = "<group>";
+		};
+		0B60E491144081D900C3FF86 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0B60E492144081DA00C3FF86 /* atc */,
+				0B60E493144081DA00C3FF86 /* io */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0B60E492144081DA00C3FF86 /* atc */ = {
+			isa = PBXGroup;
+			children = (
+				0B60E4971440822A00C3FF86 /* atc_task.c */,
+				0B60E4991440823200C3FF86 /* atc_task.h */,
+			);
+			path = atc;
+			sourceTree = "<group>";
+		};
+		0B60E493144081DA00C3FF86 /* io */ = {
+			isa = PBXGroup;
+			children = (
+				0B60E4941440820900C3FF86 /* io_task.c */,
+				0B60E4961440821800C3FF86 /* io_task.h */,
+			);
+			path = io;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +142,9 @@
 /* Begin PBXProject section */
 		0B60E472144075CF00C3FF86 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
 			buildConfigurationList = 0B60E475144075CF00C3FF86 /* Build configuration list for PBXProject "OpenATParser" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -114,6 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B60E480144075CF00C3FF86 /* main.c in Sources */,
+				0B60E49014407DD100C3FF86 /* scheduler.c in Sources */,
+				0B60E4951440820900C3FF86 /* io_task.c in Sources */,
+				0B60E4981440822A00C3FF86 /* atc_task.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,14 +225,20 @@
 		0B60E486144075CF00C3FF86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_VERSION = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 			};
 			name = Debug;
 		};
 		0B60E487144075CF00C3FF86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_VERSION = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 			};
 			name = Release;
 		};
