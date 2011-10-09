@@ -1,0 +1,44 @@
+**************************************************************************************************************************************************
+**                                                                                                                                                                                                                                            **
+**                                                                                                Open AT Parser                                                                                                               **
+**                                                                                                                                                                                                                                            **
+**************************************************************************************************************************************************
+
+Description:
+
+    Open AT Parser is a simple C language project that can be used in several applications, like remote
+controlled devices, modems and microcontrolled devices. 
+    The program has a minimalistic task scheduler, that runs two tasks, one to get data from IO and other
+to parse and execute pre defined commands. Current IO tasks implementation is using shell console , but it
+can be easily adapted to use serial ports for instance.
+
+How to compile:
+
+    This project compiles using gcc. I'm current using XCode 4.1 but I intend to create a cross-platform makefile.
+
+    1) Open OpenATParser.xcodeproj
+    2) Explore the source starting by main.c (optional)
+    3) Hit Run button.
+
+
+Licensing:
+
+    This project is free software; you can redistribute it and/or modify it under the terms of the GNU 
+General Public License as published by the Free Software Foundation; either version 3 of the License, or 
+(at your option) any later version.
+This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for 
+more details.
+
+You can receive a copy of the GNU General Public License from 
+http://www.gnu.org/licenses/gpl.html
+
+
+____________________________________
+
+
+Feel free to fork and create your own implementation, hope you like it.
+
+Francisco Ferreira
+
+
